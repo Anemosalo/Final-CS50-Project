@@ -11,7 +11,7 @@ body{
      height:450px;
      background-color:black;
      text-align: center;
-     display: flex;
+     
 }   
 
 header{
@@ -30,10 +30,13 @@ header{
 }
 
 .sliders{
-     background-color: red;
+     background-color: grey;
      height:150px;
+     display: flex;
      justify-content: center;
      align-items: flex-end;
+     padding-bottom: 5%;
+     
 }
 
 
