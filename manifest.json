@@ -29,5 +29,8 @@
     "32": "images/ct32.png",
     "48": "images/ct48.png",
     "128": "images/ct128.png"
-  }
+  },
+  "content_security_policy": {
+  "extension_pages": "script-src 'self' https://cdn.jsdelivr.net; object-src 'self'"
+}
 }

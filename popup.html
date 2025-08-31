@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
+    <script src="contents.js" defer></script>
+    <script src="lib/chart.umd.min.js"></script>
     <title>Popup!</title>
   </head>
   <body>
@@ -9,23 +11,34 @@
     <header>CONVOLUTION APP</header>
     <!---->
     <!---->
-    <div class="charts">"Charts Here to be made"</div>
+    <div class="charts">
+      "Charts Here to be made"
+      <canvas id="chart">Hi</canvas>
+    </div>
     <!---->
     <!---->
-    <div class="sliders">
-      <div>
-        <div id="bins-count">Bins:</div>
-        <input type="range" min="1" max="100" value="50" />
-      </div>
-      <!---->
-      <div>
-        <div id="dis-count">Dis:</div>
-        <input type="range" min="0" max="100" value="50" />
-      </div>
-      <!---->
-      <div>
-        <div id="center-count">Center:</div>
-        <input type="range" min="0" max="100" value="50" />
+    <div style="background-color: grey">
+      <button id="generator" type="submit" style="margin-top: 20px">
+        Generate Chart!
+      </button>
+      <button>Generate Number!</button>
+      <button>Convolve with New Chart!</button>
+      <div class="sliders">
+        <div>
+          <div id="mean-count">Mean:</div>
+          <input id="mean" type="range" min="1" max="100" value="1" />
+        </div>
+        <!---->
+        <div>
+          <div id="std-count">Standard Dev:</div>
+          <input id="std" type="range" min="0" max="100" value="1" />
+        </div>
+        <!---->
+        <!---->
+        <div>
+          <div id="bin-count">Bins:</div>
+          <input id="bin" type="range" min="0" max="100" value="5" />
+        </div>
       </div>
     </div>
     <!---->
