@@ -4,9 +4,7 @@
   "manifest_version": 3,
   "name": "Convolution Extension",
   "version": "0.01",
-  "background": {
-    "service_worker": "background.js"
-  },
+  
 
   "action": {
     
