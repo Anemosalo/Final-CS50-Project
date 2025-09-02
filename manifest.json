@@ -11,19 +11,10 @@
   "action": {
     
     "default_popup": "popup.html",
-    "default_title": "here is the suposed extenstion",
-    "default_icon": {
-      "16": "images/ct16.png",
-      "32": "images/ct32.png",
-      "48": "images/ct48.png",
-      "128": "images/ct128.png"
-   }
-  },
-  "icons": {
-    "16": "images/ct16.png",
-    "32": "images/ct32.png",
-    "48": "images/ct48.png",
-    "128": "images/ct128.png"
-  } 
+    "default_title": "Distribution Extesion",
+    "default_icon": "images/finalIcon.png"
+    
+  }
+
   
 }
