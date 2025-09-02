@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -9,34 +10,77 @@ body{
      
      width:400px;
      height:450px;
-     background-color:black;
-     text-align: center;
-     
+     background-color: #f3f4f6;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color: #312e81;
 }   
 
 header{
-     font-size: large;
-     font-family: Arial, Helvetica, sans-serif;
-     background-color: gray;
-     
-     height: 60px;
-     
+     background-color: #ffffff;
+     border-radius: 10px;
+     padding: 10px;
+     width: 100%;
+     text-align: center;
+     box-shadow:  4px 4px 4px rgba(0,0,0,0.1);
+     margin-bottom: 3px;
 }
 
-.charts{
-     background-color: white;
+.charts{  
+     background-color: #ffffff;
      height: 240px;
+     width:100%;
+     border-radius: 10px;
+     box-shadow:  4px 4px 4px rgba(0,0,0,0.1);
+     padding: 3px;
+}
 
+button{
+     background-color: #5b21b6;
+     color: #ffffff;
+     border: none;
+     border-radius: 5px;
+     font-size: 15px;
+       
+}
+
+
+#sample{
+     margin: 0;
+     font-weight: 600;
+}
+
+
+.buttons{
+     display: flex;
+     justify-content: space-around;
+     margin-top: 4px;
 }
 
 .sliders{
-
+     background-color: #9f87c5;
      height:110px;
+     width:100%;
      display: flex;
      justify-content: center;
-     align-items: flex-end;
-     padding-bottom: 5%;
+     align-items: center;
+     flex-direction: column;
+     padding: 5%;
+     border-radius: 15px;
+     box-shadow:4px 4px 4px rgba(0,0,0,0.1); ;
      
+}
+
+#sampleCounter {
+     text-align: center;
+     font-size: 14px;
+     font-weight: 600;
+}
+
+button:hover{
+     background-color: #6d28d9;
 }
 
 
@@ -44,9 +88,10 @@ header{
 
 
 
-
-
-
+.slider-container{
+     width:100%;
+     text-align: center;
+}
 
 
 

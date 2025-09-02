@@ -87,10 +87,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 options: {
                     // set that seperate axis:
                         scales: {
-                                y: { beginAtZero: true, position:'left' },
+                                y: { beginAtZero: true},
                                 'y-pdf-axis':{
                                     beginAtZero:true,
-                                    position:'right',
                                     grid:{
                                         drawOnChartArea: false,
                                     }
@@ -232,4 +231,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     UpdateCharts();
+    let reset = document.getElementById("reset");
+    reset.addEventListener("click",()=> {
+        data={};
+        sampleNum=0;
+        sampleCounter.innerText= `Number of Samples: 0`;
+        DataChart.data.labels = []; 
+        DataChart.data.datasets[0].data = []; 
+        DataChart.data.datasets[1].data = []; 
+        DataChart.data.datasets[2].data = [];
+        if (Generating) {
+            clearInterval(IntervalId);
+            Generating = false;
+            toggleButton.innerText = "Auto-Generate!";
+        }
+        DataChart.update();
+    })
 });
+
