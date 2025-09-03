@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     fill:false,
                     tension: 0.1,
                     pointRadius:0
+                    
                     },
                     {
                     //  Actual PDF based on the parameters
@@ -80,20 +81,20 @@ document.addEventListener("DOMContentLoaded", () => {
                         fill:false,
                         tension:0.1,
                         pointRadius:0,
-                        // seperate y axis form others
+                        // seperate y axis form others axis
                         yAxisID: 'y-pdf-axis'
                     }
                 ],
                 options: {
-                    // set that seperate axis:
+                    // seting that seperate axis:
                         scales: {
-                                y: { beginAtZero: true},
+                                y: { beginAtZero: true,
+                                    
+                                },
                                 'y-pdf-axis':{
                                     beginAtZero:true,
-                                    grid:{
-                                        drawOnChartArea: false,
-                                    }
-                                }
+                                     grid: { drawOnChartArea: false } 
+                                },
                                 }
                         }
                 
